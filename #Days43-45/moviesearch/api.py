@@ -1,4 +1,7 @@
 import requests
+import collections
+
+Movie = collections.namedtuple('title', 'imdb_score')
 
 
 def find_movie_by_title(keyword):
@@ -6,4 +9,7 @@ def find_movie_by_title(keyword):
     resp = requests.get(url)
     resp.raise_for_status()
     results = resp.json()
-    return results.get('hits')
+    movies = []
+    for r in results.get('hits'):
+        movies.append(Movie(**r))
+    return movies
