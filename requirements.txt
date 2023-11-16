@@ -87,7 +87,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 mistune==0.8.4
 mleap==0.8.1
-mlflow==0.9.1
+mlflow==2.8.1
 msrest==0.6.6
 msrestazure==0.6.0
 nbconvert==5.5.0
