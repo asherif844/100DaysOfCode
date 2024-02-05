@@ -42,7 +42,7 @@ Click==7.0
 cloudpickle==1.1.1
 configparser==3.7.4
 contextlib2==0.5.5
-cryptography==2.6.1
+cryptography==42.0.0
 databricks-cli==0.8.6
 decorator==4.4.0
 defusedxml==0.6.0
